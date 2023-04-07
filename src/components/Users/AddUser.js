@@ -14,11 +14,12 @@ const AddUser = (props) => {
       return;
     }
 
-    if (+enteredAge < 1) { // 변수명앞에 +붙여주면 숫자로 바뀜
+    if (+enteredAge < 1) {
+      // 변수명앞에 +붙여주면 숫자로 바뀜
       return;
     }
 
-    console.log(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, enteredAge);
 
     setEnteredUsername('');
     setEnteredAge('');
