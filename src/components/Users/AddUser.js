@@ -1,9 +1,15 @@
+import Button from "../UI/Button";
 import Card from "../UI/Card";
 import classes from "./AddUser.module.css";
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
     event.preventDefault();
+    console.log('asdf')
+  };
+
+  const clickHandler = () => {
+
   };
 
   return (
@@ -13,7 +19,7 @@ const AddUser = (props) => {
         <input id="username" type="text" />
         <label htmlFor="age">Age</label>
         <input id="age" type="number" />
-        <button type="submit">유저 추가</button>
+        <Button type="submit">Add User</Button>
       </form>
     </Card>
   );
